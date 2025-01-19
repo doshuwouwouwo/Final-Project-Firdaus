@@ -14,16 +14,16 @@ export default function Navbar() {
 
   return (
     <nav>
-      <div className="container flex justify-between items-center py-8 text-lg text-white">
+      <div className="container flex justify-between items-center text-lg py-4 text-white mb-8">
         {/* gambar logo dari folder assets */}
-        <img src="" alt="logo" />
+        <img src="/logo.png" alt="logo" className="w-26 h-24" />
 
         {/* Menu */}
         <ul className="flex gap-10">
           {/* pengulangan array atau list menus */}
           {menus.map((menu, index) => (
             <li key={index}>
-              <Link to={menu.link} className="hover:opacity-50 transition-all">
+              <Link to={menu.link} className="hover:opacity-50 transition-all p-[20px]">
                 {menu.name}
               </Link>
             </li>
