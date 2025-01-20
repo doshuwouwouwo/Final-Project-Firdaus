@@ -12,7 +12,7 @@ export default function MainLayout() {
           <h1 className="text-[4rem]">WEB DEVELOPER</h1>
           <div className="flex flex-col gap-8 ml-1 pl-[80px] border-l-2 border-gray-400">
             <p className="text-md">I strives to build immersive and beautiful web applications through carefully crafted user-centric design.</p>
-            <Link className="pt-[52px] w-32 h-32 text-center rounded-full bg-[#4b7dca] text-white hover:outline outline-1 outline-white ease-in duration-300 hover:bg-transparent ">HIRE ME!</Link>
+            <Link className="pt-[52px] w-32 h-32 text-center rounded-full bg-[#4b7dca] text-white hover:outline outline-1 outline-gray-400 ease-in duration-300 hover:bg-transparent ">HIRE ME!</Link>
           </div>
           <div className="flex">
             <h1>1</h1>
@@ -22,7 +22,8 @@ export default function MainLayout() {
         </div>
         {/* section image */}
         <div className="relative">
-          <img src="/firdaus.png" alt="image" className="max-w-md mx-auto" />
+          <div className="absolute inset-0 bg-gradient-to-b from-green-400 to-green-600 mt-24 mr-12 ml-12"></div>
+          <img src="/firdaus.png" alt="image" className="relative z-10 max-w-md mx-auto" />
         </div>
       </div>
     </section>

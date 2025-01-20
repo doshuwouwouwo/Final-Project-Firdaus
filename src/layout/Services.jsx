@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 export default function Services() {
   return (
-    <div className="container py-32">
+    <div className="container py-28">
       <div className="flex flex-col items-center justify-center w-full text-white py-8">
         <h1 className="text-xl p-4">My Services</h1>
         <h1 className="text-[4rem] p-6 ">My Expertise Area</h1>
