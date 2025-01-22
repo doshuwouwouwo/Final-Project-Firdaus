@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import Pricing from "../layout/Pricing";
 import Resume from "../layout/Resume";
 
 export default function About() {
@@ -34,6 +35,7 @@ export default function About() {
           </div>
         </div>
       </div>
+      {/* stats */}
       <div className="pt-8 pb-16 text-white">
         <div className=" bg-transparent rounded-3xl flex">
           <div className="w-full md:w-1/2 lg:w-1/4 py-8">
@@ -51,7 +53,7 @@ export default function About() {
           <div className="w-full md:w-1/2 lg:w-1/4 py-8">
             <div className="md:border-r border-gray-200 px-8">
               <p className="text-gray-400 mb-2 text-center">Years Experience</p>
-              <h2 className="text-4xl lg:text-5xl font-semibold text-center">50+</h2>
+              <h2 className="text-4xl lg:text-5xl font-semibold text-center">1+</h2>
             </div>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/4 py-8">
@@ -64,6 +66,7 @@ export default function About() {
       </div>
       <div>
         <Resume />
+        <Pricing />
       </div>
     </div>
   );

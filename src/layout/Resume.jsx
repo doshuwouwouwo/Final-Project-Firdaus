@@ -1,6 +1,8 @@
 import Button from "../components/Button";
+import SkillsSection from "./SkillSection";
 
 export default function Resume() {
+  
   return (
     <div className="container py-28">
       {/* judul */}
@@ -8,8 +10,8 @@ export default function Resume() {
         <h1 className="text-2xl text-white">My Resume</h1>
       </div>
       {/* resume */}
-      <div className="flex items-center text-white py-8 border-b-2">
-        <div className=" px-8 py-8 w-2/3">
+      <div className="flex items-center text-white py-8 border-b-2 border-gray-400">
+        <div className=" pr-8 py-8 w-2/3">
           <p className="text-6xl">All Over My Personal Details Find Here</p>
         </div>
         {/* lorem */}
@@ -20,11 +22,11 @@ export default function Resume() {
       </div>
 
       {/* skills */}
-      <div>
-        {/* button */}
-        <div></div>
+      <div className="flex items-center">
         {/* card */}
-        <div></div>
+        <div>
+          <SkillsSection />
+        </div>
       </div>
     </div>
   );
