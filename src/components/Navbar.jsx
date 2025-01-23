@@ -5,8 +5,6 @@ export default function Navbar() {
   const menus = [
     { name: "Home", link: "/" },
     { name: "About", link: "/about" },
-    { name: "Services", link: "/services" },
-    { name: "Pages", link: "/pages" },
     { name: "Contact", link: "/contact" },
   ];
 
@@ -27,6 +25,7 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+
 
         {/* button login */}
         <Button text={"LET'S TALK!"}>
