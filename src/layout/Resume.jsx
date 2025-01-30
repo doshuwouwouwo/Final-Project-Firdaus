@@ -2,9 +2,8 @@ import Button from "../components/Button";
 import SkillsSection from "./SkillSection";
 
 export default function Resume() {
-  
   return (
-    <div className="container py-28">
+    <div className="container py-28 bg-[#1a1e29]">
       {/* judul */}
       <div>
         <h1 className="text-2xl text-white">My Resume</h1>

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 
 export default function SkillsSection() {
@@ -6,12 +7,12 @@ export default function SkillsSection() {
 
   // Data untuk skills
   const skills = [
-    { name: "WordPress", description: "Skill menggunakan WordPress untuk pengembangan situs web.", progress: 90 },
-    { name: "Figma", description: "Kemampuan desain menggunakan Figma untuk prototyping.", progress: 85 },
-    { name: "Elementor", description: "Penguasaan Elementor sebagai plugin desain WordPress.", progress: 95 },
-    { name: "Photoshop", description: "Kemampuan mengedit gambar dan desain grafis di Photoshop.", progress: 87 },
-    { name: "Illustrator", description: "Skill desain vektor menggunakan Adobe Illustrator.", progress: 93 },
-    { name: "HTML", description: "Kemampuan markup HTML untuk pengembangan web.", progress: 80 },
+    { nama: "WordPress", deskripsi: "Skill menggunakan WordPress untuk pengembangan situs web.", progress: 90 },
+    { nama: "Figma", deskripsi: "Kemampuan desain menggunakan Figma untuk prototyping.", progress: 85 },
+    { nama: "Elementor", deskripsi: "Penguasaan Elementor sebagai plugin desain WordPress.", progress: 95 },
+    { nama: "Photoshop", deskripsi: "Kemampuan mengedit gambar dan desain grafis di Photoshop.", progress: 87 },
+    { nama: "Illustrator", deskripsi: "Skill desain vektor menggunakan Adobe Illustrator.", progress: 93 },
+    { nama: "HTML", deskripsi: "Kemampuan markup HTML untuk pengembangan web.", progress: 80 },
   ];
 
   // Data untuk daftar section di sidebar
@@ -21,10 +22,10 @@ export default function SkillsSection() {
   const SkillCard = ({ skill }) => (
     <div className="bg-gray-800 text-white p-4 rounded-lg shadow-md">
       <div className="flex justify-between items-center mb-2">
-        <h3 className="text-lg font-semibold">{skill.name}</h3>
+        <h3 className="text-lg font-semibold">{skill.nama}</h3>
         <span className="text-sm font-medium">{skill.progress}%</span>
       </div>
-      <p className="text-sm text-gray-400">{skill.description}</p>
+      <p className="text-sm text-gray-400">{skill.deskripsi}</p>
       <div className="w-full bg-gray-700 h-2 mt-4 rounded-full">
         <div className="bg-blue-500 h-2 rounded-full" style={{ width: `${skill.progress}%` }}></div>
       </div>
@@ -32,7 +33,7 @@ export default function SkillsSection() {
   );
 
   return (
-    <section className="bg-gray-900 py-8">
+    <section className="py-8">
       <div className="container mx-auto px-4 flex flex-col lg:flex-row">
         {/* Sidebar untuk navigasi */}
         <div className="w-full lg:w-1/4 mb-6 lg:mb-0">

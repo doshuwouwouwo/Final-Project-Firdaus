@@ -38,7 +38,7 @@ export default function Pricing() {
             </p>
           </div>
           {/* button */}
-          <div className="pt-8 px-8">
+          <div className="pt-8 px-8 mb-8">
             <button className="bg-[#4b7dca] text-white font-size-md w-full py-4 px-4 rounded-full  items-center transition ease-in duration-300 hover:outline outline-1 hover:outline-gray-400 hover:bg-transparent ">SELECT PLAN</button>
           </div>
         </div>
@@ -72,7 +72,7 @@ export default function Pricing() {
             </p>
           </div>
           {/* button */}
-          <div className="pt-8 px-8">
+          <div className="pt-8 px-8 mb-8">
             <button className="bg-[#4b7dca] text-white font-size-md w-full py-4 px-4 rounded-full  items-center transition ease-in duration-300 hover:outline outline-1 hover:outline-gray-400 hover:bg-transparent ">SELECT PLAN</button>
           </div>
         </div>
@@ -106,7 +106,7 @@ export default function Pricing() {
             </p>
           </div>
           {/* button */}
-          <div className="pt-8 px-8">
+          <div className="pt-8 px-8 mb-8">
             <button className="bg-[#4b7dca] text-white font-size-md w-full py-4 px-4 rounded-full  items-center transition ease-in duration-300 hover:outline outline-1 hover:outline-gray-400 hover:bg-transparent ">SELECT PLAN</button>
           </div>
         </div>

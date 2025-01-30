@@ -1,10 +1,11 @@
 import Navbar from "../components/Navbar";
+import FAQSection from "../layout/Faq";
 import Pricing from "../layout/Pricing";
 import Resume from "../layout/Resume";
 
 export default function About() {
   return (
-    <div className="bg-[#1a1e29]">
+    <div className="bg-[#13161f]">
       <Navbar />
       <div className="container min-h-screen">
         {/* heading */}
@@ -67,6 +68,9 @@ export default function About() {
       <div>
         <Resume />
         <Pricing />
+      </div>
+      <div className="w-full bg-[#1a1e29] py-16">
+        <FAQSection />
       </div>
     </div>
   );
