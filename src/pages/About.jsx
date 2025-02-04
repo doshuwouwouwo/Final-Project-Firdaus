@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import FAQSection from "../layout/Faq";
 import Pricing from "../layout/Pricing";
@@ -69,9 +70,10 @@ export default function About() {
         <Resume />
         <Pricing />
       </div>
-      <div className="w-full bg-[#1a1e29] py-16">
+      <div className="w-full">
         <FAQSection />
       </div>
+      <Footer />
     </div>
   );
 }

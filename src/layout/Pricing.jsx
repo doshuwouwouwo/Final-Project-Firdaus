@@ -1,6 +1,6 @@
 export default function Pricing() {
   return (
-    <div className="container">
+    <div className="container mb-12">
       <div className="flex flex-col items-center w-full text-white pt-4 pb-4">
         <h1 className="text-2xl py-4">Pricing & Plans</h1>
         <h1 className="text-4xl pb-4">Choose Your Plan</h1>
