@@ -5,7 +5,7 @@ import "aos/dist/aos.css"
 export default function Services() {
   AOS.init();
   return (
-    <div className="container py-28">
+    <div className="container py-28 bg-[#1a1e29]">
       <div className="flex flex-col items-center justify-center w-full text-white py-8">
         <h1 className="text-xl p-4">My Services</h1>
         <h1 className="text-[4rem] p-6 ">My Expertise Area</h1>
