@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+
 import Button from "./Button";
 
 export default function Navbar() {
@@ -6,25 +6,47 @@ export default function Navbar() {
     { name: "Home", link: "/" },
     { name: "About", link: "/about" },
     { name: "Contact", link: "/contact" },
+    { name: "Services", link: "/services" },
+    {
+      name: "Pages",
+      submenu: [
+        { name: "Portfolio", link: "/portofolio" },
+        { name: "Testimonials", link: "/testimonials" },
+        { name: "FAQ", link: "/faq" },
+        { name: "404 Page", link: "/404" },
+        { name: "Coming Soon", link: "/coming-soon" }
+      ]
+    }
   ];
 
   return (
     <nav>
       <div className="container flex justify-between items-center text-lg py-4 text-white mb-8">
-        {/* gambar logo dari folder assets */}
-        <img src="/logo.png" alt="logo" className="w-26 h-24" />
+      {/* gambar logo dari folder assets */}
+      <img src="/logo.png" alt="logo" className="w-26 h-24" />
 
         {/* Menu */}
-        <ul className="flex gap-10">
-          {/* pengulangan array atau list menus */}
-          {menus.map((menu, index) => (
-            <li key={index}>
-              <Link to={menu.link} className="hover:opacity-50 transition-all p-[20px]">
-                {menu.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <ul className="flex space-x-6">
+        {menus.map((menu, index) => (
+          <li key={index} className="relative group">
+            <a href={menu.link || "#"} className="hover:opacity-75 transition-all">
+              {menu.name}
+            </a>
+
+            {menu.submenu && (
+              <ul className="absolute hidden p-4 min-w-36 bg-gray-700 shadow group-hover:block">
+                {menu.submenu.map((sub, subIndex) => (
+                  <li key={subIndex}>
+                    <a href={sub.link} className="block hover:text-gray-300">
+                      {sub.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
 
 
         {/* button login */}
