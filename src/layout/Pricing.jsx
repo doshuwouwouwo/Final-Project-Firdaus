@@ -1,6 +1,10 @@
+import AOS from "aos";
+import "aos/dist/aos.css"
+
 export default function Pricing() {
+  AOS.init();
   return (
-    <div className="container mb-12">
+    <div data-aos="fade-up" className="container mb-12">
       <div className="flex flex-col items-center w-full text-white pt-4 pb-4">
         <h1 className="text-2xl py-4">Pricing & Plans</h1>
         <h1 className="text-4xl pb-4">Choose Your Plan</h1>

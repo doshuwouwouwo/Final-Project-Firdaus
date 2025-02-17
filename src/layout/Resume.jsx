@@ -1,9 +1,12 @@
 import Button from "../components/Button";
 import SkillsSection from "./SkillSection";
+import AOS from "aos";
+import "aos/dist/aos.css"
 
 export default function Resume() {
+  AOS.init();
   return (
-    <div className="container py-28 bg-[#1a1e29]">
+    <div data-aos="fade-up" className="container py-28 bg-[#1a1e29]">
       {/* judul */}
       <div>
         <h1 className="text-2xl text-white">My Resume</h1>

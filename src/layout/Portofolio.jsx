@@ -1,5 +1,4 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+
 
 export default function Portofolio() {
   const projects = [
@@ -43,7 +42,6 @@ export default function Portofolio() {
 
   return (
     <div className="bg-[#1a1e29] w-full">
-      <Navbar />
       <div className=" text-white py-16 px-6">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-2xl font-bold text-center mb-8">Portfolio</h1>
@@ -61,7 +59,6 @@ export default function Portofolio() {
         </div>
       </div>
     </div>
-    <Footer />
     </div>
   );
 }

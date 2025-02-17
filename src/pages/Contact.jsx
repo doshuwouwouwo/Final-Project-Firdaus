@@ -1,8 +1,11 @@
 import Button from "../components/Button";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import AOS from "aos";
+import "aos/dist/aos.css"
 
 export default function Contact() {
+  AOS.init();
   return (
     <div className="bg-[#13161f]">
       <Navbar />

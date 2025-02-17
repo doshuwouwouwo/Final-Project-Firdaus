@@ -1,19 +1,19 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import Testimonials from "../layout/Testimonials";
+import Portofolio from "../layout/Portofolio";
 import AOS from "aos";
 import "aos/dist/aos.css"
 
 
-export default function Testimonialspage() {
-  AOS.init();
+export default function PortofolioPages() {
+    AOS.init();
   return (
     <div>
       <Navbar />
       <div>
-        <Testimonials />
+        <Portofolio />
       </div>
       <Footer />
     </div>
-  )
+  );
 }

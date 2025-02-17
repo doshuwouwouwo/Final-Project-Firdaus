@@ -6,13 +6,13 @@ export default function Navbar() {
     { name: "Home", link: "/" },
     { name: "About", link: "/about" },
     { name: "Contact", link: "/contact" },
-    { name: "Services", link: "/services" },
+    { name: "Services", link: "/servicepages" },
     {
       name: "Pages",
       submenu: [
-        { name: "Portfolio", link: "/portofolio" },
-        { name: "Testimonials", link: "/testimonials" },
-        { name: "FAQ", link: "/faq" },
+        { name: "Portofolio", link: "/portofoliopages" },
+        { name: "Testimonials", link: "/testimonialspage" },
+        { name: "FAQ", link: "/faqpages" },
         { name: "404 Page", link: "/404" },
         { name: "Coming Soon", link: "/coming-soon" }
       ]
@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <nav>
-      <div className="container flex justify-between items-center text-lg py-4 text-white mb-8">
+      <div className="container flex justify-between items-center text-lg py-4 text-white bg-gray-900 z-10">
       {/* gambar logo dari folder assets */}
       <img src="/logo.png" alt="logo" className="w-26 h-24" />
 
@@ -29,15 +29,15 @@ export default function Navbar() {
         <ul className="flex space-x-6">
         {menus.map((menu, index) => (
           <li key={index} className="relative group">
-            <a href={menu.link || "#"} className="hover:opacity-75 transition-all">
+            <a href={menu.link || "#"} className="hover:text-[#4b7dca] transition-ease-in duration-300">
               {menu.name}
             </a>
 
             {menu.submenu && (
-              <ul className="absolute hidden p-4 min-w-36 bg-gray-700 shadow group-hover:block">
+              <ul className="absolute hidden p-4 w-52 space-y-2 bg-gray-900 shadow group-hover:block border-2  border-gray-600">
                 {menu.submenu.map((sub, subIndex) => (
                   <li key={subIndex}>
-                    <a href={sub.link} className="block hover:text-gray-300">
+                    <a href={sub.link} className="block hover:bg-[#4b7dca] rounded-full p-2">
                       {sub.name}
                     </a>
                   </li>

@@ -3,17 +3,24 @@ import Navbar from "../components/Navbar";
 import FAQSection from "../layout/Faq";
 import Pricing from "../layout/Pricing";
 import Resume from "../layout/Resume";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function About() {
+  AOS.init();
   return (
     <div className="bg-[#13161f]">
       <Navbar />
       <div className="container min-h-screen">
         {/* heading */}
         <div className="flex flex-col items-center justify-center w-full text-white pt-8 pb-24">
-          <h1 className="text-2xl">ABOUT ME</h1>
-          <h1 className="text-[4rem] pb-4">Did U Know Me?</h1>
-          <p className="text-xl px-64 text-center">
+          <h1 data-aos="fade-up" data-aos-duration="100" className="text-2xl">
+            ABOUT ME
+          </h1>
+          <h1 data-aos="fade-up" data-aos-duration="200" className="text-[4rem] pb-4">
+            Did U Know Me?
+          </h1>
+          <p data-aos="fade-up" data-aos-duration="300" className="text-xl px-64 text-center">
             As the saying goes, who dont know, then dont love. Its a proverb from the Indonesian language, which means{" "}
             <span className="bg-gradient-to-r from-red-500 via--500 to-pink-500 text-transparent bg-clip-text">Tak kenal maka tak sayang</span>😙{" "}
           </p>
@@ -32,13 +39,15 @@ export default function About() {
           </div>
           {/* section image */}
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-b from-green-400 to-green-600 mt-24 mr-32 ml-32 rounded-3xl"></div>
+            <div className="">
+              <img src="/blob.png" alt="image" className="absolute z-10 w-full max-w-sm mt-12 ml-32" />
+            </div>
             <img src="/firdaus.png" alt="image" className="relative z-10 max-w-xs mx-auto" />
           </div>
         </div>
       </div>
       {/* stats */}
-      <div className="pt-8 pb-16 text-white">
+      <div data-aos="fade-up" className="pt-8 pb-16 text-white">
         <div className=" bg-transparent rounded-3xl flex">
           <div className="w-full md:w-1/2 lg:w-1/4 py-8">
             <div className="sm:border-r border-gray-200 px-8">
@@ -70,7 +79,7 @@ export default function About() {
         <Resume />
         <Pricing />
       </div>
-      <div className="w-full">
+      <div data-aos="fade-up" className="w-full">
         <FAQSection />
       </div>
       <Footer />

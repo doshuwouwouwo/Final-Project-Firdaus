@@ -7,6 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Testimonials from "../layout/Testimonials";
 
+
 export default function Home() {
   AOS.init();
   return (

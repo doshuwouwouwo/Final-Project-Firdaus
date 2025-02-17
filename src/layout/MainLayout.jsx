@@ -64,7 +64,9 @@ export default function MainLayout() {
         </div>
         {/* section image */}
         <div className="relative">
-          <div className="absolute inset-0 bg-gradient-to-b from-green-400 to-green-600 mt-24 mr-12 ml-12"></div>
+          <div className="">
+            <img src="/blob.png" alt="image" className="absolute z-10 max-w-lg mt-24 mr-12 ml-16" />
+          </div>
           <img src="/firdaus.png" alt="image" className="relative z-10 max-w-md mx-auto" />
         </div>
       </div>
