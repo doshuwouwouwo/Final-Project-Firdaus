@@ -6,6 +6,8 @@ import Services from "../layout/Services";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Testimonials from "../layout/Testimonials";
+import Resume from "../layout/Resume";
+import Portofolio from "../layout/Portofolio";
 
 
 export default function Home() {
@@ -19,6 +21,8 @@ export default function Home() {
       <div className="w-full bg-[#1a1e29]">
         <Logo />
         <Services />
+        <Resume />
+        <Portofolio />
         <Testimonials />
       </div>
       <div className="w-full bg-[#13161f] py-8">
