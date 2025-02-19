@@ -14,13 +14,9 @@ export default function About() {
       <div className="container min-h-screen">
         {/* heading */}
         <div className="flex flex-col items-center justify-center w-full text-white pt-8 pb-24">
-          <h1 data-aos="fade-up" data-aos-duration="100" className="text-2xl">
-            ABOUT ME
-          </h1>
-          <h1 data-aos="fade-up" data-aos-duration="200" className="text-[4rem] pb-4">
-            Did U Know Me?
-          </h1>
-          <p data-aos="fade-up" data-aos-duration="300" className="text-xl px-64 text-center">
+          <h1 className="text-2xl">ABOUT ME</h1>
+          <h1 className="text-[4rem] pb-4">Did U Know Me?</h1>
+          <p className="text-xl px-64 text-center">
             As the saying goes, who dont know, then dont love. Its a proverb from the Indonesian language, which means{" "}
             <span className="bg-gradient-to-r from-red-500 via--500 to-pink-500 text-transparent bg-clip-text">Tak kenal maka tak sayang</span>😙{" "}
           </p>
@@ -29,16 +25,19 @@ export default function About() {
         <div className="grid grid-cols-2 gap-8 ">
           {/* section text */}
           <div className=" text-white">
-            <h1 className="pt-16 pb-4">About Me!</h1>
-            <h1 className="py-4 text-4xl">I Am Front End Developer</h1>
-            <p className="py-4">
+            <h1 data-aos="fade-right" data-aos-duration="200" className="pt-16 pb-4">
+              About Me!
+            </h1>
+            <h1 data-aos="fade-right" data-aos-duration="300" className="py-4 text-4xl">
+              I Am Front End Developer
+            </h1>
+            <p data-aos="fade-right" data-aos-duration="400" className="py-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque id, impedit itaque ratione voluptatum sunt adipisci earum veritatis beatae cumque inventore officiis ducimus mollitia? Nam quos similique reprehenderit, quibusdam
               architecto aut aliquid reiciendis quae veniam mollitia asperiores molestias dolor, soluta adipisci earum eius fugit provident exercitationem, molestiae natus perspiciatis? Blanditiis?
             </p>
-            <button></button>
           </div>
           {/* section image */}
-          <div className="relative">
+          <div data-aos="fade-left" className="relative">
             <div className="">
               <img src="/blob.png" alt="image" className="absolute z-10 w-full max-w-sm mt-12 ml-32" />
             </div>

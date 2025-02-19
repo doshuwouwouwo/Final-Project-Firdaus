@@ -24,7 +24,7 @@ export default function Resume() {
       </div>
 
       {/* skills */}
-      <div className="grid grid-cols-2 gap-8 w-full">
+      <div className="gap-8 w-full">
         {/* card */}
           <SkillsSection />
       </div>

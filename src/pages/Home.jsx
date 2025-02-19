@@ -18,7 +18,7 @@ export default function Home() {
         <Navbar />
         <MainLayout />
       </div>
-      <div className="w-full bg-[#1a1e29]">
+      <div className="w-full bg-[#1a1e29] ">
         <Logo />
         <Services />
         <Resume />

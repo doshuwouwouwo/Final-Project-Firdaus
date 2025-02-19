@@ -7,7 +7,7 @@ import "aos/dist/aos.css"
 export default function FaqPages() {
   AOS.init();
   return (
-    <div>
+    <div className="bg-[#13161f]">
       <Navbar />
       <div>
         <FAQSection />

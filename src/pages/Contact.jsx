@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <div className="bg-[#13161f]">
       <Navbar />
-      <section className="bg-gray-900 text-white py-16 px-6">
+      <section className=" text-white py-16 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl font-bold text-center mb-6">Contact</h2>
           <h2 className="text-6xl font-bold text-center mb-12">Get In Touch With Me!</h2>

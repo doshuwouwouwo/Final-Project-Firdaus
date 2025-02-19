@@ -8,7 +8,7 @@ import Testimonials from "../layout/Testimonials";
 export default function ServicePages() {
   AOS.init();
   return (
-    <div>
+    <div className="bg-[#1a1e29]">
       <Navbar />
       <div>
         <Services />

@@ -5,18 +5,18 @@ export default function MainLayout() {
   AOS.init();
   return (
     // section hero
-    <section className="container">
+    <section className="container mt-12">
       <div className=" grid grid-cols-2 gap-8 items-center">
         {/* section text */}
         <div className="text-white grow-0">
-          <h1 className="text-2xl">HELLO EVERYONE!👋</h1>
-          <h1 className="text-[4rem]">I AM FIRDAUS</h1>
-          <h1 className="text-[4rem]">WEB DEVELOPER</h1>
-          <div className="flex flex-col gap-8 ml-1 pl-[80px] border-l-2 border-gray-400">
+          <h1 data-aos="fade-right" data-aos-duration="200" className="text-2xl">HELLO EVERYONE!👋</h1>
+          <h1 data-aos="fade-right" data-aos-duration="300" className="text-[4rem]">I AM FIRDAUS</h1>
+          <h1 data-aos="fade-right" data-aos-duration="400" className="text-[4rem]">WEB DEVELOPER</h1>
+          <div data-aos="fade-right" data-aos-duration="500" className="flex flex-col gap-8 ml-1 pl-[80px] border-l-2 border-gray-400">
             <p className="text-md">I strives to build immersive and beautiful web applications through carefully crafted user-centric design.</p>
             <Link className="pt-[52px] w-32 h-32 text-center rounded-full bg-[#4b7dca] text-white hover:outline outline-1 outline-gray-400 ease-in duration-300 hover:bg-transparent ">HIRE ME!</Link>
           </div>
-          <div className="flex pt-16 gap-4">
+          <div data-aos="fade-right" data-aos-duration="600" className="flex pt-16 gap-4">
             <button className="bg-transparent outline outline-1 outline-gray-400 hover:bg-[#4b7dca] py-2 px-2 rounded-full items-center transition ease-in duration-100 ">
               <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24">
                 <path
@@ -63,9 +63,9 @@ export default function MainLayout() {
           </div>
         </div>
         {/* section image */}
-        <div className="relative">
+        <div data-aos="fade-left" className="relative">
           <div className="">
-            <img src="/blob.png" alt="image" className="absolute z-10 max-w-lg mt-24 mr-12 ml-16" />
+            <img src="/blob.png" alt="image" className="absolute max-w-lg mt-24 mr-12 ml-16" />
           </div>
           <img src="/firdaus.png" alt="image" className="relative z-10 max-w-md mx-auto" />
         </div>

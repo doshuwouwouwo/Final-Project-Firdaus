@@ -8,7 +8,7 @@ import "aos/dist/aos.css"
 export default function PortofolioPages() {
     AOS.init();
   return (
-    <div>
+    <div className="bg-[#1a1e29]">
       <Navbar />
       <div>
         <Portofolio />

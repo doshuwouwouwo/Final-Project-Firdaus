@@ -8,7 +8,7 @@ import "aos/dist/aos.css"
 export default function Testimonialspage() {
   AOS.init();
   return (
-    <div>
+    <div className="bg-gray-900">
       <Navbar />
       <div>
         <Testimonials />

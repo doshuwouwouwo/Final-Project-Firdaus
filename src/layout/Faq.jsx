@@ -8,7 +8,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="container py-8 bg-[#1a1e29] sm:py-16 lg:py-16">
+    <section className="container py-8 sm:py-16 lg:py-16">
       <div className="px-4 py-8 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-2xl mx-auto text-center text-white">
           <h1 className="text-xl font-bold py-4">FAQ</h1>
