@@ -9,9 +9,15 @@ export default function MainLayout() {
       <div className=" grid grid-cols-2 gap-8 items-center">
         {/* section text */}
         <div className="text-white grow-0">
-          <h1 data-aos="fade-right" data-aos-duration="200" className="text-2xl">HELLO EVERYONE!👋</h1>
-          <h1 data-aos="fade-right" data-aos-duration="300" className="text-[4rem]">I AM FIRDAUS</h1>
-          <h1 data-aos="fade-right" data-aos-duration="400" className="text-[4rem]">WEB DEVELOPER</h1>
+          <h1 data-aos="fade-right" data-aos-duration="200" className="text-2xl">
+            HELLO EVERYONE!👋
+          </h1>
+          <h1 data-aos="fade-right" data-aos-duration="300" className="text-[4rem]">
+            I AM FIRDAUS
+          </h1>
+          <h1 data-aos="fade-right" data-aos-duration="400" className="text-[4rem]">
+            WEB DEVELOPER
+          </h1>
           <div data-aos="fade-right" data-aos-duration="500" className="flex flex-col gap-8 ml-1 pl-[80px] border-l-2 border-gray-400">
             <p className="text-md">I strives to build immersive and beautiful web applications through carefully crafted user-centric design.</p>
             <Link className="pt-[52px] w-32 h-32 text-center rounded-full bg-[#4b7dca] text-white hover:outline outline-1 outline-gray-400 ease-in duration-300 hover:bg-transparent ">HIRE ME!</Link>
@@ -65,7 +71,7 @@ export default function MainLayout() {
         {/* section image */}
         <div data-aos="fade-left" className="relative">
           <div className="">
-            <img src="/blob.png" alt="image" className="absolute max-w-lg mt-24 mr-12 ml-16" />
+            <img src="/blob.png" alt="image" className="absolute max-w-lg mt-24 ml-20" />
           </div>
           <img src="/firdaus.png" alt="image" className="relative z-10 max-w-md mx-auto" />
         </div>
