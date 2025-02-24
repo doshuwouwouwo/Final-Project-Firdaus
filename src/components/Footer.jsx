@@ -1,6 +1,23 @@
 import { Link } from "react-router";
 
 export default function Footer() {
+  const linkedInURL = "https://www.linkedin.com/in/firdaus-ramadhana-46b32b338/";
+
+  const handleRedirectLinkedIn = () => {
+    window.open(linkedInURL, "_blank");
+  };
+
+  const handleInstagramRedirect = () => {
+    window.open("https://www.instagram.com/lhodoss/", "_blank");
+  };
+
+  const handleTikTokRedirect = () => {
+    window.open("https://www.tiktok.com/@frrrrr.d", "_blank");
+  };
+
+  const handlePinterestRedirect = () => {
+    window.open("https://www.pinterest.com/firdausramadhana02/", "_blank");
+  };
   return (
     <div className="container pt-24 pb-8 h-full">
       {/* button contact me */}
@@ -58,7 +75,7 @@ export default function Footer() {
           <h1 className="text-xl pb-8">Follow Me On</h1>
           <p className="pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus!</p>
           <div className="flex gap-2 py-2">
-            <button className="bg-transparent outline outline-1 outline-gray-400 hover:bg-[#4b7dca] py-2 px-2 rounded-full items-center transition ease-in duration-100 ">
+          <button onClick={handlePinterestRedirect} className="bg-transparent outline outline-1 outline-gray-400 hover:bg-[#4b7dca] py-2 px-2 rounded-full items-center transition ease-in duration-100 ">
               <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24">
                 <path
                   fill="currentColor"
@@ -66,33 +83,59 @@ export default function Footer() {
                 ></path>
               </svg>
             </button>
-            <button className="bg-transparent  outline outline-1 outline-gray-400 hover:bg-[#4b7dca] px-2 py-2 rounded-full items-center transition ease-in duration-100 ">
+            <button onClick={handleRedirectLinkedIn} className="bg-transparent  outline outline-1 outline-gray-400 hover:bg-[#4b7dca] px-2 py-2 rounded-full items-center transition ease-in duration-100 ">
               <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24">
-                <path
-                  fill="currentColor"
-                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"
-                ></path>
+                <circle cx={4} cy={4} r={2} fill="currentColor" fillOpacity={0}>
+                  <animate fill="freeze" attributeName="fill-opacity" dur="0.15s" values="0;1"></animate>
+                </circle>
+                <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={4}>
+                  <path strokeDasharray={12} strokeDashoffset={12} d="M4 10v10">
+                    <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.15s" dur="0.2s" values="12;0"></animate>
+                  </path>
+                  <path strokeDasharray={12} strokeDashoffset={12} d="M10 10v10">
+                    <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.45s" dur="0.2s" values="12;0"></animate>
+                  </path>
+                  <path strokeDasharray={24} strokeDashoffset={24} d="M10 15c0 -2.76 2.24 -5 5 -5c2.76 0 5 2.24 5 5v5">
+                    <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.65s" dur="0.2s" values="24;0"></animate>
+                  </path>
+                </g>
               </svg>
             </button>
-            <button className="bg-transparent  outline outline-1 outline-gray-400 hover:bg-[#4b7dca] px-2 py-2 rounded-full items-center transition ease-in duration-100 ">
+            <button onClick={handleInstagramRedirect} className="bg-transparent  outline outline-1 outline-gray-400 hover:bg-[#4b7dca] px-2 py-2 rounded-full items-center transition ease-in duration-100 ">
               <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24">
-                <path
-                  fill="currentColor"
-                  d="M7.5 11a2 2 0 1 0 0-4H3v4zm1 2H3v4h5.5a2 2 0 1 0 0-4m2.063-1.428A4 4 0 0 1 8.5 19H1V5h6.5a4 4 0 0 1 3.063 6.573M15.5 6H21v1.5h-5.5zm7.5 8.5h-7.5v.25A2.75 2.75 0 0 0 20.7 16h2.134a4.752 4.752 0 0 1-9.334-1.25v-1.5a4.75 4.75 0 1 1 9.5 0zm-2.104-2a2.751 2.751 0 0 0-5.292 0z"
-                ></path>
+                <circle cx={17} cy={7} r={1.5} fill="currentColor" fillOpacity={0}>
+                  <animate fill="freeze" attributeName="fill-opacity" begin="1.3s" dur="0.15s" values="0;1"></animate>
+                </circle>
+                <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}>
+                  <path strokeDasharray={72} strokeDashoffset={72} d="M16 3c2.76 0 5 2.24 5 5v8c0 2.76 -2.24 5 -5 5h-8c-2.76 0 -5 -2.24 -5 -5v-8c0 -2.76 2.24 -5 5 -5h4Z">
+                    <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="72;0"></animate>
+                  </path>
+                  <path strokeDasharray={28} strokeDashoffset={28} d="M12 8c2.21 0 4 1.79 4 4c0 2.21 -1.79 4 -4 4c-2.21 0 -4 -1.79 -4 -4c0 -2.21 1.79 -4 4 -4">
+                    <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.6s" values="28;0"></animate>
+                  </path>
+                </g>
               </svg>
             </button>
           </div>
           <div className="flex gap-2">
-            <button className="bg-transparent  outline outline-1 outline-gray-400 hover:bg-[#4b7dca] px-2 py-2 rounded-full items-center transition ease-in duration-100 ">
-              <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 48 48">
-                <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={4}>
-                  <path d="M44 24a19.94 19.94 0 0 1-5.889 14.173A19.94 19.94 0 0 1 24 44C12.954 44 4 35.046 4 24a19.93 19.93 0 0 1 5.5-13.775A19.94 19.94 0 0 1 24 4a19.94 19.94 0 0 1 14.111 5.827A19.94 19.94 0 0 1 44 24"></path>
-                  <path d="M44 24c-2.918 0-10.968-1.1-18.173 2.063C18 29.5 12.333 34.832 9.863 38.147"></path>
-                  <path d="M16.5 5.454C19.63 8.343 26.46 15.698 29 23s3.48 16.28 4.06 18.835"></path>
-                  <path d="M4.154 21.5c3.778.228 13.779.433 20.179-2.3s11.907-7.76 13.796-9.355M5.5 31.613a20.08 20.08 0 0 0 9 9.991"></path>
-                  <path d="M4 24a19.93 19.93 0 0 1 5.5-13.775M24 4a19.94 19.94 0 0 0-14.5 6.225M32 5.664a20 20 0 0 1 6.111 4.163A19.94 19.94 0 0 1 44 24c0 2.462-.445 4.821-1.26 7M24 44a19.94 19.94 0 0 0 14.111-5.827"></path>
-                </g>
+          <button onClick={handleTikTokRedirect} className="bg-transparent  outline outline-1 outline-gray-400 hover:bg-[#4b7dca] px-2 py-2 rounded-full items-center transition ease-in duration-100 ">
+              <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24">
+                <mask id="lineMdTiktok0">
+                  <g fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}>
+                    <path
+                      fill="#fff"
+                      stroke="none"
+                      d="M16.6 5.82c-0.68 -0.78 -1.06 -1.78 -1.06 -2.82h-3.09v12.4c-0.02 0.67 -0.31 1.31 -0.79 1.77c-0.48 0.47 -1.13 0.73 -1.8 0.73c-1.42 0 -2.6 -1.16 -2.6 -2.6c0 -1.72 1.66 -3.01 3.37 -2.48v-3.16c-3.45 -0.46 -6.47 2.22 -6.47 5.64c0 3.33 2.76 5.7 5.69 5.7c3.14 0 5.69 -2.55 5.69 -5.7v-6.29c1.25 0.9 2.76 1.38 4.3 1.38v-3.09c0 0 -1.88 0.09 -3.24 -1.48Z"
+                    ></path>
+                    <path stroke="#000" strokeDasharray={36} strokeDashoffset={72} strokeWidth={4} d="M11 11h-1c-2.21 0 -4.5 1.79 -4.5 4c0 2.21 1.5 4.5 4.5 4.5c2.21 0 4 -2.29 4 -4.5v-12.5">
+                      <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="72;36"></animate>
+                    </path>
+                    <path stroke="#000" strokeDasharray={10} strokeDashoffset={20} strokeWidth={4} d="M18 2.5v8">
+                      <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.5s" dur="0.1s" values="20;10"></animate>
+                    </path>
+                  </g>
+                </mask>
+                <rect width={24} height={24} fill="currentColor" mask="url(#lineMdTiktok0)"></rect>
               </svg>
             </button>
             <button className="bg-transparent  outline outline-1 outline-gray-400 hover:bg-[#4b7dca] px-2 py-2 rounded-full items-center transition ease-in duration-100 ">
@@ -122,11 +165,11 @@ export default function Footer() {
         <div className="flex gap-12">
           <div className="flex flex-col space-y-4">
             <h1>MY EMAIL</h1>
-            <p className="text-white">hello@firdaus.com</p>
+            <p className="text-white">firdausramadhana02@gmail.com</p>
           </div>
           <div className="flex flex-col space-y-4">
             <h1 className="text-md">MY PHONE</h1>
-            <p className="text-white">+62 888 888 888</p>
+            <p className="text-white">+62 813 2813 2515</p>
           </div>
         </div>
         <p className="text-center text-gray-400 text-md">All rights reserved © 2025 Firdaus</p>

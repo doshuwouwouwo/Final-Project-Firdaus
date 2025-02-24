@@ -1,8 +1,14 @@
 import { useState } from "react";
-import Button from "./Button";
 
 export default function Navbar() {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+  const handleWhatsAppRedirect = () => {
+    const encodedMessage = encodeURIComponent("Halo, saya tertarik untuk berbicara lebih lanjut!");
+    const whatsappURL = `https://wa.me/6281328132515?text=${encodedMessage}`;
+
+    window.open(whatsappURL, "_blank");
+  };
 
   const menus = [
     { name: "Home", link: "/" },
@@ -55,13 +61,14 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* Button */}
-        <Button text={"LET'S TALK!"}>
+        {/* Button (Diperbarui) */}
+        <button onClick={handleWhatsAppRedirect} className="bg-[#4b7dca] hover:outline hover:outline-1 hover:outline-gray-400 hover:bg-transparent px-4 py-2 rounded-full flex flex-row-reverse items-center transition ease-in duration-200 gap-2">
+          <h1 className="text-white text-base font-semibold">{`LET'S TALK!`}</h1>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
             <path d="M4 5h16c0.55 0 1 0.45 1 1v12c0 0.55-0.45 1-1 1H4c-0.55 0-1-0.45-1-1V6c0-0.55 0.45-1 1-1zM3 6.5l9 5.5 9-5.5" />
             <path d="M19 13c3.31 0 6 2.69 6 6 0 3.31-2.69 6-6 6s-6-2.69-6-6c0-3.31 2.69-6 6-6zm-3 6h6m-3 3l3-3m-3 3l-3-3" />
           </svg>
-        </Button>
+        </button>
       </div>
     </nav>
   );

@@ -45,13 +45,7 @@ export default function ProfileSection() {
         <div className="w-1/4">
           <div className="flex flex-col space-y-4">
             {["Skills", "Experience", "Education", "Awards"].map((tab) => (
-              <button
-                key={tab}
-                className={`py-3 px-6 text-lg font-medium rounded-full transition-all duration-300 ${
-                  activeTab === tab ? "bg-blue-500 text-white" : "bg-gray-800 hover:bg-gray-700"
-                }`}
-                onClick={() => setActiveTab(tab)}
-              >
+              <button key={tab} className={`py-3 px-6 text-lg font-medium rounded-full transition-all duration-300 ${activeTab === tab ? "bg-blue-500 text-white" : "bg-gray-800 hover:bg-gray-700"}`} onClick={() => setActiveTab(tab)}>
                 {tab}
               </button>
             ))}
@@ -66,23 +60,16 @@ export default function ProfileSection() {
           {activeTab === "Skills" && (
             <div className="grid grid-cols-2 gap-6">
               {skillsData.map((skill, index) => (
-                <div key={index} className="bg-gray-800 p-6 rounded-lg relative overflow-hidden">
+                <div key={index} className="bg-gray-800 outline outline-1 outline-gray-400 p-6 relative overflow-hidden">
                   <h3 className="text-xl font-semibold">{skill.nama}</h3>
                   <p className="text-gray-400 text-sm mt-2">{skill.deskripsi}</p>
 
                   {/* Percentage Badge */}
-                  <div className="absolute top-4 right-4 bg-gray-700 px-3 py-1 rounded-full text-sm">
-                    {skill.progress}%
-                  </div>
+                  <div className="absolute top-4 right-4 bg-gray-700 px-3 py-1 rounded-full text-sm">{skill.progress}%</div>
 
                   {/* Progress Bar */}
                   <div className="mt-4 h-2 w-full bg-gray-700 rounded-full overflow-hidden">
-                    <div
-                      className={`h-full bg-blue-500 transition-all duration-1000 ${
-                        animated ? "w-full" : "w-0"
-                      }`}
-                      style={{ width: `${skill.progress}%` }}
-                    ></div>
+                    <div className={`h-full bg-white transition-all duration-1000 ${animated ? "w-full" : "w-0"}`} style={{ width: `${skill.progress}%` }}></div>
                   </div>
                 </div>
               ))}
@@ -93,7 +80,7 @@ export default function ProfileSection() {
           {activeTab === "Experience" && (
             <div className="grid gap-4">
               {experiences.map((exp) => (
-                <div key={exp.role} className="bg-gray-800 p-4 rounded-lg">
+                <div key={exp.role} className="bg-gray-800 outline outline-1 outline-gray-400 p-4 ">
                   <p className="text-gray-400">{exp.time}</p>
                   <h3 className="text-lg font-semibold">{exp.role}</h3>
                   <p>{exp.company}</p>
@@ -106,7 +93,7 @@ export default function ProfileSection() {
           {activeTab === "Education" && (
             <div className="grid gap-4">
               {education.map((edu) => (
-                <div key={edu.course} className="bg-gray-800 p-4 rounded-lg">
+                <div key={edu.course} className="bg-gray-800 outline outline-1 outline-gray-400 p-4 ">
                   <p className="text-gray-400">{edu.time}</p>
                   <h3 className="text-lg font-semibold">{edu.course}</h3>
                   <p>{edu.academy}</p>
@@ -119,7 +106,7 @@ export default function ProfileSection() {
           {activeTab === "Awards" && (
             <div className="grid grid-cols-2 gap-4">
               {awards.map((award, index) => (
-                <div key={index} className="bg-gray-800 p-4 rounded-lg flex flex-col items-center">
+                <div key={index} className="bg-gray-800 outline outline-1 outline-gray-400 p-4 flex flex-col items-center">
                   <p className="text-gray-400">{award.year}</p>
                   <h3 className="text-lg font-semibold text-center">{award.title}</h3>
                   <p>{award.status}</p>

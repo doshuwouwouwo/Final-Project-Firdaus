@@ -2,7 +2,7 @@ import Button from "../components/Button";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import AOS from "aos";
-import "aos/dist/aos.css"
+import "aos/dist/aos.css";
 
 export default function Contact() {
   AOS.init();
@@ -33,29 +33,33 @@ export default function Contact() {
             <div className="space-y-6 text-white">
               <div className="bg-[#292f3c] p-8 flex items-center gap-4">
                 <div className="bg-gray-800 p-4 w-14 h-14 rounded-full flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
-                  />
-                </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                    />
+                  </svg>
                 </div>
 
                 <div>
-                  <p className="text-gray-300">zhack@support.com</p>
+                  <p className="text-gray-300">firdausramadhana02@gmail.com</p>
                   <p className="text-lg font-semibold">My Email</p>
                 </div>
               </div>
 
               <div className="bg-[#292f3c] p-8  flex items-center gap-4">
                 <div className="bg-gray-800 p-4 w-14 h-14 rounded-full flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-                </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+                    />
+                  </svg>
                 </div>
                 <div>
-                  <p className="text-gray-300">+0 (555) 123 45 67</p>
+                  <p className="text-gray-300">+62 813 2813 2515</p>
                   <p className="text-lg font-semibold">My Phone</p>
                 </div>
               </div>
@@ -69,7 +73,7 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <p className="text-gray-300">Building W 13th Parks, Suite 559, Denver</p>
+                  <p className="text-gray-300">JVXW+9R8, Jl. Watumalang, Siwatu, Bumiroso, Kec. Watumalang, Kabupaten Wonosobo, Jawa Tengah 56352</p>
                   <p className="text-lg font-semibold">My Address</p>
                 </div>
               </div>
