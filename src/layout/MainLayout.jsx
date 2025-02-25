@@ -23,7 +23,7 @@ export default function MainLayout() {
   };
 
   const [changingText, setChangingText] = useState("WEB");
-  const textOptions = ["WEB", "APP", "UI"];
+  const textOptions = ["WEB", "APP", "FRONT END"];
   let index = 0;
 
   useEffect(() => {
@@ -62,7 +62,7 @@ export default function MainLayout() {
                 </motion.span>
               </AnimatePresence>
             </span>
-            <span className="text-white">Designer</span>
+            <span className="text-white">Developer</span>
           </div>
           <div data-aos="fade-right" data-aos-duration="500" className="flex flex-col gap-8 ml-1 pl-[80px] border-l-2 border-gray-400">
             <p className="text-md">I strives to build immersive and beautiful web applications through carefully crafted user-centric design.</p>
