@@ -6,7 +6,7 @@ import Testimonialspage from "./pages/Testimonialspage";
 import ServicePages from "./pages/ServicePages";
 import PortofolioPages from "./pages/PortofolioPages";
 import FaqPages from "./pages/FaqPages";
-import ScrollToTop from "./layout/ScrollToTop";
+import ScrollToTop from "./layout/ScrollToTop.jsx";
 
 
 
