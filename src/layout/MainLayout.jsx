@@ -1,5 +1,7 @@
 import { Link } from "react-router";
 import AOS from "aos";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function MainLayout() {
   const linkedInURL = "https://www.linkedin.com/in/firdaus-ramadhana-46b32b338/";
@@ -20,6 +22,18 @@ export default function MainLayout() {
     window.open("https://www.pinterest.com/firdausramadhana02/", "_blank");
   };
 
+  const [changingText, setChangingText] = useState("WEB");
+  const textOptions = ["WEB", "APP", "UI"];
+  let index = 0;
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setChangingText(textOptions[index]);
+      index = (index + 1) % textOptions.length;
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
+
   AOS.init();
   return (
     // section hero
@@ -30,12 +44,26 @@ export default function MainLayout() {
           <h1 data-aos="fade-right" data-aos-duration="200" className="text-2xl">
             HELLO EVERYONE!👋
           </h1>
-          <h1 data-aos="fade-right" data-aos-duration="300" className="text-[4rem]">
-            I AM FIRDAUS
+          <h1 data-aos="fade-right" data-aos-duration="200" className="text-white text-[4rem] font-bold">
+            I Am Firdaus
           </h1>
-          <h1 data-aos="fade-right" data-aos-duration="400" className="text-[4rem]">
-            WEB DEVELOPER
-          </h1>
+          <div className="flex text-[4rem] font-bold">
+            <span className="overflow-hidden text-center inline-block ">
+              <AnimatePresence mode="wait">
+                <motion.span
+                  key={changingText}
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 20 }}
+                  transition={{ duration: 1, type: "spring", stiffness: 500, damping: 20 }}
+                  className="block bg-gradient-to-r from-purple-400 to-blue-500 text-transparent bg-clip-text px-2"
+                >
+                  {changingText}
+                </motion.span>
+              </AnimatePresence>
+            </span>
+            <span className="text-white">Designer</span>
+          </div>
           <div data-aos="fade-right" data-aos-duration="500" className="flex flex-col gap-8 ml-1 pl-[80px] border-l-2 border-gray-400">
             <p className="text-md">I strives to build immersive and beautiful web applications through carefully crafted user-centric design.</p>
             <Link className="pt-[52px] w-32 h-32 text-center rounded-full bg-[#4b7dca] text-white hover:outline outline-1 outline-gray-400 ease-in duration-300 hover:bg-transparent ">HIRE ME!</Link>
@@ -115,7 +143,7 @@ export default function MainLayout() {
         {/* section image */}
         <div data-aos="fade-left" className="relative">
           <div className="">
-            <img src="/blob.png" alt="image" className="absolute max-w-lg mt-24 ml-20" />
+            <img src="/blob.png" alt="image" className="absolute max-w-lg mt-24 ml-6" />
           </div>
           <img src="/firdaus.png" alt="image" className="relative z-10 max-w-md mx-auto" />
         </div>

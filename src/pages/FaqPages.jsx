@@ -8,8 +8,8 @@ export default function FaqPages() {
   AOS.init();
   return (
     <div className="bg-[#13161f]">
-      <Navbar />
       <div>
+      <Navbar />
         <FAQSection />
       </div>
       <Footer />

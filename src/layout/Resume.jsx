@@ -1,7 +1,7 @@
 import Button from "../components/Button";
 import SkillsSection from "./SkillSection";
 import AOS from "aos";
-import "aos/dist/aos.css"
+import "aos/dist/aos.css";
 
 export default function Resume() {
   AOS.init();
@@ -26,7 +26,7 @@ export default function Resume() {
       {/* skills */}
       <div className="gap-8 w-full">
         {/* card */}
-          <SkillsSection />
+        <SkillsSection />
       </div>
     </div>
   );

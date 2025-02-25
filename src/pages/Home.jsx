@@ -23,9 +23,11 @@ export default function Home() {
         <Services />
         <Resume />
         <Portofolio />
-        <Testimonials />
       </div>
-      <div className="w-full bg-[#13161f] py-8">
+        <div className="w-full bg-gray-900">
+        <Testimonials />
+        </div>
+      <div className="w-full bg-[#13161f]">
         <Footer />
       </div>
     </div>

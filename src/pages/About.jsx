@@ -74,10 +74,10 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div>
+      <div className="bg-[#1a1e29]">
         <Resume />
-        <Pricing />
       </div>
+      <Pricing />
       <div data-aos="fade-up" className="w-full">
         <FAQSection />
       </div>

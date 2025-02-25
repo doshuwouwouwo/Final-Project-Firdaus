@@ -8,12 +8,14 @@ import "aos/dist/aos.css"
 export default function Testimonialspage() {
   AOS.init();
   return (
-    <div className="bg-gray-900">
+    <div>
+        <div className="bg-gray-900">
       <Navbar />
-      <div>
         <Testimonials />
       </div>
-      <Footer />
+      <div className="bg-[#13161f]">
+        <Footer />
+      </div>
     </div>
   )
 }

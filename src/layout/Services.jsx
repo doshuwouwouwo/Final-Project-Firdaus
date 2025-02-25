@@ -9,7 +9,7 @@ export default function Services() {
       <div className="flex flex-col items-center justify-center w-full text-white py-8">
         <h1 data-aos="fade-up" data-aos-delay="100" className="text-xl p-4">My Services</h1>
         <h1 data-aos="fade-up" data-aos-delay="200" className="text-[4rem] p-6 ">My Expertise Area</h1>
-        <div data-aos="fade-up" data-aos-delay="300" className="text-[#b4b4b6] px-96 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita unde vitae et porro alias obcaecati tenetur sint nulla maiores at.</div>
+        <div data-aos="fade-up" data-aos-delay="200" className="text-[#b4b4b6] px-96 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita unde vitae et porro alias obcaecati tenetur sint nulla maiores at.</div>
       </div>
       <div className="grid grid-cols-3 gap-4 items-center text-white" data>
         <div className="p-8 border-2 border-gray-600" data-aos="fade-up" data-aos-delay="300">
