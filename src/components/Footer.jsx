@@ -55,8 +55,8 @@ export default function Footer() {
           <div className="flex flex-col items-start w-full gap-2">
             <Link to={"/"}>Home</Link>
             <Link to={"/about"}>About Me</Link>
-            <Link to={"/contact"}>My Services</Link>
-            <Link to={"/contact"}>My Portofolio</Link>
+            <Link to={"/servicepages"}>My Services</Link>
+            <Link to={"/portofoliopages"}>My Portofolio</Link>
             <Link to={"/contact"}>Contact Me</Link>
           </div>
         </div>
@@ -64,10 +64,11 @@ export default function Footer() {
         <div className="flex flex-col items-start w-[20%]">
           <h1 className="text-xl pb-8">Quick Links</h1>
           <div className="flex flex-col items-start w-full gap-2">
-            <Link to={"/"}>Privacy Policy</Link>
-            <Link to={"/about"}>Terms Of Service</Link>
-            <Link to={"/contact"}>Credits</Link>
-            <Link to={"/contact"}>FAQ</Link>
+            <Link to={"/#"}>Privacy Policy</Link>
+            <Link to={"/#"}>Terms Of Service</Link>
+            <Link to={"/#"}>Credits</Link>
+            <Link to={"/faqpages"}>FAQ</Link>
+            <Link to={"/testimonialspage"}>Testimonials</Link>
           </div>
         </div>
         {/* section social links */}

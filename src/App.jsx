@@ -6,12 +6,14 @@ import Testimonialspage from "./pages/Testimonialspage";
 import ServicePages from "./pages/ServicePages";
 import PortofolioPages from "./pages/PortofolioPages";
 import FaqPages from "./pages/FaqPages";
+import ScrollToTop from "./layout/ScrollToTop";
 
 
 
 export default function App() {
   return (
    <BrowserRouter>
+   <ScrollToTop />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />

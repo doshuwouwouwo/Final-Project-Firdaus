@@ -6,7 +6,7 @@ export default function Logo() {
         <div className="">
           <h1 data-aos="fade-right" data-aos-duration="100" className="text-l text-center">Trusted by The Worlds Leading Brand</h1> 
         </div>
-        <div className="flex space-x-4">
+        <div className="flex space-x-4 items-end">
           {/* img */}
           <img data-aos="fade-left" data-aos-duration="200" src="/logoipsum-1.svg" alt="" className="h-10" />
           <img data-aos="fade-left" data-aos-duration="300" src="/logoipsum-2.svg" alt="" className="h-10" />
