@@ -143,7 +143,7 @@ export default function MainLayout() {
         {/* section image */}
         <div data-aos="fade-left" className="relative">
           <div className="">
-            <img src="/blob.png" alt="image" className="absolute max-w-lg mt-24 ml-6" />
+            <img src="/blob.png" alt="image" className="absolute max-w-lg mt-24 ml-20" />
           </div>
           <img src="/firdaus.png" alt="image" className="relative z-10 max-w-md mx-auto" />
         </div>
